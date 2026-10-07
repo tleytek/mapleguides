@@ -1,10 +1,13 @@
-# MapleGuides: Maple Island route
+# MapleGuides: MapleStory Classic leveling route
 
 Live guide: https://tleytek.github.io/mapleguides/
 
-An interactive checklist for a quest-and-grind route across Maple Island in MapleStory Classic. It runs from Roger's starting map to Southperry. This repository holds only the generated site; it is rebuilt from a private source project.
+An interactive checklist leveling route for MapleStory Classic, split into parts. This repository holds only the generated site; it is rebuilt from a private source project.
 
-The guide is a source-backed draft, not a measured fastest route. See the "About this guide", "Route decisions and skips" and "Limitations" sections on the page.
+- [Maple Island — quest-and-grind route](https://tleytek.github.io/mapleguides/maple-island.html)
+- [Part 2: Lith Harbor to first job (Magician)](https://tleytek.github.io/mapleguides/lith-harbor-to-first-job.html)
+
+Each part is a source-backed draft, not a measured fastest route. See the "About this guide", "Route decisions and skips" and "Limitations" sections on each page.
 
 ## Notice
 
