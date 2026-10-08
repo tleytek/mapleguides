@@ -6,6 +6,7 @@ An interactive checklist leveling route for MapleStory Classic, split into parts
 
 - [Maple Island — quest-and-grind route](https://tleytek.github.io/mapleguides/maple-island.html)
 - [Part 2: Lith Harbor to first job (Magician)](https://tleytek.github.io/mapleguides/lith-harbor-to-first-job.html)
+- [Part 3: First job to level 20 (Magician)](https://tleytek.github.io/mapleguides/first-job-to-level-20.html)
 
 Each part is a source-backed draft, not a measured fastest route. See the "About this guide", "Route decisions and skips" and "Limitations" sections on each page.
 

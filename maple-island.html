@@ -32,6 +32,8 @@ ol.steps{list-style:none;margin:0;padding:0 8px 8px}
 .step label{cursor:pointer}
 .step .title{font-weight:600}
 .step.grind{background:#1c1a0f;border-left:3px solid var(--warn)}
+.step.scroll{border-left:3px solid var(--accent)}
+.step.scroll .title::before{content:"SCROLL";font-size:.7rem;letter-spacing:.06em;color:#0b1220;background:var(--accent);border-radius:4px;padding:1px 6px;margin-right:8px;vertical-align:2px}
 .step.grind .title::before{content:"GRIND";font-size:.7rem;letter-spacing:.06em;color:#0b1220;background:var(--warn);border-radius:4px;padding:1px 6px;margin-right:8px;vertical-align:2px}
 .step .text{display:block;color:#cbd5e1;white-space:pre-line}
 .step.done .title{text-decoration:line-through;color:var(--muted)}
