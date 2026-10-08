@@ -31,6 +31,8 @@ ol.steps{list-style:none;margin:0;padding:0 8px 8px}
 .step input{width:20px;height:20px;margin:3px 0 0;flex:none;accent-color:var(--ok);cursor:pointer}
 .step label{cursor:pointer}
 .step .title{font-weight:600}
+.step.grind{background:#1c1a0f;border-left:3px solid var(--warn)}
+.step.grind .title::before{content:"GRIND";font-size:.7rem;letter-spacing:.06em;color:#0b1220;background:var(--warn);border-radius:4px;padding:1px 6px;margin-right:8px;vertical-align:2px}
 .step .text{display:block;color:#cbd5e1;white-space:pre-line}
 .step.done .title{text-decoration:line-through;color:var(--muted)}
 .step.done .text{color:#64748b}
@@ -55,13 +57,20 @@ ol.steps{list-style:none;margin:0;padding:0 8px 8px}
 <details class="panel info"><summary>About this guide</summary><div class="body">
 <p>Status: source-backed draft, not a measured fastest route. It starts where Part 1 ends: in Lith Harbor, fresh off the ship, about level 8 (7 at minimum) with the mesos you had left after the fare. It ends when you become a Magician in Ellinia at level 10.</p>
 <p>Lith Harbor&#x27;s four training quests from Olaf and Teo all need level 8. They are done in two loops into the fields east of town. One kill counts for every active quest that asks for that monster, so the Slimes and Pigs are hunted once for two quests each.</p>
-<p>The quests leave you around level 9. You finish level 10 on the Pig map you are already on, return for the turn-ins, then ride with Phil to Ellinia for first job.</p>
+<p>The quests leave you around level 9. When no quest is left at your level the guide says so with a &quot;Go grind&quot; step: grind anywhere you can kill quickly without competing for monsters, then continue. At level 10 Phil hands in his quest and drives you to Ellinia for first job.</p>
 <p>Reading the images: green circles mark the NPC to talk to; blue circles mark the portal to enter. Each image shows your current map. Artwork is from NiaMeowDB; the highlights were added locally.</p>
 </div></details>
-<div class="toolbar"><div class="bar" aria-hidden="true"><span></span></div><span id="total">0 / 19 steps</span><button id="next" type="button">Next step</button><button id="expand" type="button">Expand all</button><button id="collapse" type="button">Collapse all</button><button id="reset" type="button">Reset</button></div>
-<details class="panel section" id="section-1"><summary><span>1. Lith Harbor: pick up the first training quests</span><span class="count">0 / 2</span></summary><ol class="steps">
-<li class="step"><div class="row"><input type="checkbox" id="step-lh-teo-accept"><label for="step-lh-teo-accept"><span class="title">Accept Teo&#x27;s first hobby quest</span><span class="text">Walk right from the dock to Teo and accept Teo&#x27;s Weird Hobby: 10 Slimes and 1 Slime Bubble. You need level 8 for every quest in this part. If you are still level 7, go out to the next map, hunt Slimes and snails until you reach 8, then come back.</span>
+<div class="toolbar"><div class="bar" aria-hidden="true"><span></span></div><span id="total">0 / 21 steps</span><button id="next" type="button">Next step</button><button id="expand" type="button">Expand all</button><button id="collapse" type="button">Collapse all</button><button id="reset" type="button">Reset</button></div>
+<details class="panel section" id="section-1"><summary><span>1. Lith Harbor: pick up the first training quests</span><span class="count">0 / 3</span></summary><ol class="steps">
+<li class="step"><div class="row"><input type="checkbox" id="step-lh-phil-accept"><label for="step-lh-phil-accept"><span class="title">Accept Phil&#x27;s Call</span><span class="text">Walk left from the dock to Phil, the man in the red outfit by the palm tree, and accept Phil&#x27;s Call. You need level 8 for this and every other quest in this part. If you are still level 7, go out to the first map east of town, hunt until you reach 8, then come back.</span>
 <span class="before">Before: Level 8 or higher.</span>
+</label></div><details class="more"><summary>Map, completion and why</summary><div class="body">
+<a href="assets/maps/lh-phil-accept.png"><img loading="lazy" src="assets/maps/lh-phil-accept.png" alt="Accept Phil&#x27;s Call"></a>
+<p><span class="label">Complete when:</span> Phil&#x27;s Call is active in your quest log.</p>
+<p><span class="label">Why:</span> Phil&#x27;s Call has no objective except reaching level 10 as a Beginner. It pays 188 XP and 245 mesos when you come back at 10, and Phil then drives you to Ellinia at a beginner discount.</p>
+<p><span class="label">Sources:</span> <a href="https://meowdb.com/msclassic/quest-tracker/10001">Phil&#x27;s Call</a></p>
+</div></details></li>
+<li class="step"><div class="row"><input type="checkbox" id="step-lh-teo-accept"><label for="step-lh-teo-accept"><span class="title">Accept Teo&#x27;s first hobby quest</span><span class="text">Walk right to Teo and accept Teo&#x27;s Weird Hobby: 10 Slimes and 1 Slime Bubble.</span>
 </label></div><details class="more"><summary>Map, completion and why</summary><div class="body">
 <a href="assets/maps/lh-teo-accept.png"><img loading="lazy" src="assets/maps/lh-teo-accept.png" alt="Accept Teo&#x27;s first hobby quest"></a>
 <p><span class="label">Complete when:</span> Teo&#x27;s Weird Hobby is active in your quest log.</p>
@@ -121,7 +130,7 @@ ol.steps{list-style:none;margin:0;padding:0 8px 8px}
 <p><span class="label">Sources:</span> <a href="https://meowdb.com/msclassic/quest-tracker/10000">Olaf&#x27;s First Training</a> · <a href="https://meowdb.com/msclassic/quest-tracker/10009">Olaf&#x27;s Second Training</a></p>
 </div></details></li>
 </ol></details>
-<details class="panel section" id="section-4"><summary><span>4. Thicket Around the Beach II: Pigs, Orange Mushrooms and level 10</span><span class="count">0 / 6</span></summary><ol class="steps">
+<details class="panel section" id="section-4"><summary><span>4. Thicket Around the Beach II: Pigs and Orange Mushrooms</span><span class="count">0 / 6</span></summary><ol class="steps">
 <li class="step"><div class="row"><input type="checkbox" id="step-lh-to-right-2"><label for="step-lh-to-right-2"><span class="title">Leave Lith Harbor to the east again</span><span class="text">Enter the highlighted portal at the far right of Lith Harbor.</span>
 </label></div><details class="more"><summary>Map, completion and why</summary><div class="body">
 <a href="assets/maps/lh-to-right-2.png"><img loading="lazy" src="assets/maps/lh-to-right-2.png" alt="Leave Lith Harbor to the east again"></a>
@@ -140,14 +149,13 @@ ol.steps{list-style:none;margin:0;padding:0 8px 8px}
 <p><span class="label">Complete when:</span> You arrive on Thicket Around the Beach II.</p>
 <p><span class="label">Why:</span> Pigs and Orange Mushrooms first appear on the next map.</p>
 </div></details></li>
-<li class="step"><div class="row"><input type="checkbox" id="step-t2-hunt"><label for="step-t2-hunt"><span class="title">Hunt Pigs and Orange Mushrooms to level 10, then head back</span><span class="text">Defeat 10 Pigs and 8 Orange Mushrooms and pick up 1 Pig&#x27;s Head. Then keep hunting on this map until you reach level 10. Go back through the highlighted portal on the left.</span>
+<li class="step"><div class="row"><input type="checkbox" id="step-t2-hunt"><label for="step-t2-hunt"><span class="title">Hunt Pigs and Orange Mushrooms, then head back</span><span class="text">Defeat 10 Pigs and 8 Orange Mushrooms and pick up 1 Pig&#x27;s Head. Then go back through the highlighted portal on the left.</span>
 <span class="before">Before: Teo&#x27;s Even Weirder Hobby and Olaf&#x27;s Second Training active.</span>
 </label></div><details class="more"><summary>Map, completion and why</summary><div class="body">
-<a href="assets/maps/t2-hunt.png"><img loading="lazy" src="assets/maps/t2-hunt.png" alt="Hunt Pigs and Orange Mushrooms to level 10, then head back"></a>
+<a href="assets/maps/t2-hunt.png"><img loading="lazy" src="assets/maps/t2-hunt.png" alt="Hunt Pigs and Orange Mushrooms, then head back"></a>
 <p><span class="label">Complete when:</span> You arrive on Thicket Around the Beach I.</p>
-<p><span class="label">Why:</span> Thicket Around the Beach II has 18 Pigs and 9 Orange Mushrooms, the only nearby map with both. First job needs level 10. The quests alone leave you short of it, and this map is already on your route, so finishing the levels here avoids a separate trip. Pigs give 13 XP and Orange Mushrooms 15. From the guaranteed minimum that is about 1,400 XP (roughly 100 Pigs); arriving at level 8 and the extra kills along the way make it noticeably less in practice.</p>
+<p><span class="label">Why:</span> Thicket Around the Beach II has 18 Pigs and 9 Orange Mushrooms, the only nearby map with both, and the Pigs count for Teo and Olaf at the same time.</p>
 <p class="uncertainty"><span class="label">Unresolved:</span> The Pig&#x27;s Head drop chance is not published.</p>
-<p class="uncertainty"><span class="label">Unresolved:</span> Whether this map is the fastest place for a Beginner to finish level 10 has not been timed. The source&#x27;s Magician guide recommends the fields around Henesys only after first job.</p>
 <p><span class="label">Sources:</span> <a href="https://meowdb.com/msclassic/maps/010000012">Thicket Around the Beach II</a> · <a href="https://meowdb.com/msclassic/quest-tracker/10011">Teo&#x27;s Even Weirder Hobby</a> · <a href="https://meowdb.com/msclassic/quest-tracker/10009">Olaf&#x27;s Second Training</a></p>
 </div></details></li>
 <li class="step"><div class="row"><input type="checkbox" id="step-t1-to-right-2"><label for="step-t1-to-right-2"><span class="title">Back through Thicket I</span><span class="text">Enter the highlighted portal on the left.</span>
@@ -163,7 +171,7 @@ ol.steps{list-style:none;margin:0;padding:0 8px 8px}
 <p><span class="label">Why:</span> Teo, Olaf and the ride to Ellinia are all in Lith Harbor.</p>
 </div></details></li>
 </ol></details>
-<details class="panel section" id="section-5"><summary><span>5. Lith Harbor: final turn-ins and the ride to Ellinia</span><span class="count">0 / 3</span></summary><ol class="steps">
+<details class="panel section" id="section-5"><summary><span>5. Lith Harbor: final turn-ins and the ride to Ellinia</span><span class="count">0 / 4</span></summary><ol class="steps">
 <li class="step"><div class="row"><input type="checkbox" id="step-lh-teo-final"><label for="step-lh-teo-final"><span class="title">Turn in Teo&#x27;s second hobby</span><span class="text">Turn in Teo&#x27;s Even Weirder Hobby for 124 XP, 277 mesos, a Sniper Potion and 10 Lemons.</span>
 </label></div><details class="more"><summary>Map, completion and why</summary><div class="body">
 <a href="assets/maps/lh-teo-final.png"><img loading="lazy" src="assets/maps/lh-teo-final.png" alt="Turn in Teo&#x27;s second hobby"></a>
@@ -178,14 +186,20 @@ ol.steps{list-style:none;margin:0;padding:0 8px 8px}
 <p><span class="label">Why:</span> This is the last Lith Harbor quest you can take before first job.</p>
 <p><span class="label">Sources:</span> <a href="https://meowdb.com/msclassic/quest-tracker/10009">Olaf&#x27;s Second Training</a></p>
 </div></details></li>
-<li class="step"><div class="row"><input type="checkbox" id="step-lh-phil-cab"><label for="step-lh-phil-cab"><span class="title">Ride with Phil to Ellinia</span><span class="text">Walk back left past the dock to Phil, the man in the red outfit by the palm tree, and pay for a ride to Ellinia.</span>
-<span class="before">Before: About 100 mesos.</span>
+<li class="step grind"><div class="row"><input type="checkbox" id="step-lh-grind-10"><label for="step-lh-grind-10"><span class="title">Go grind to level 10</span><span class="text">You have done every quest available at your level. Go grind until you reach level 10, at any spot where you can kill monsters quickly without competing with other players, then come back to Phil in Lith Harbor.</span>
+<span class="before">Before: All four Olaf and Teo quests handed in.</span>
+</label></div><details class="more"><summary>Completion and why</summary><div class="body">
+<p><span class="label">Complete when:</span> You are level 10 and back in Lith Harbor.</p>
+<p><span class="label">Why:</span> First job and Phil&#x27;s Call both need level 10, and no other quest is open below it. Busy maps change from hour to hour, so the guide does not pick a spot: choose one you can hold to yourself.</p>
+</div></details></li>
+<li class="step"><div class="row"><input type="checkbox" id="step-lh-phil-cab"><label for="step-lh-phil-cab"><span class="title">Turn in Phil&#x27;s Call and ride to Ellinia</span><span class="text">Turn in Phil&#x27;s Call to Phil (188 XP, 245 mesos, 8 Red Potions, 8 Blue Potions), then talk to him again and pay for the ride to Ellinia.</span>
+<span class="before">Before: Level 10, still a Beginner, about 100 mesos.</span>
 </label></div><details class="more"><summary>Map, completion and why</summary><div class="body">
-<a href="assets/maps/lh-phil-cab.png"><img loading="lazy" src="assets/maps/lh-phil-cab.png" alt="Ride with Phil to Ellinia"></a>
+<a href="assets/maps/lh-phil-cab.png"><img loading="lazy" src="assets/maps/lh-phil-cab.png" alt="Turn in Phil&#x27;s Call and ride to Ellinia"></a>
 <p><span class="label">Complete when:</span> You arrive in Ellinia.</p>
-<p><span class="label">Why:</span> Ellinia is on the far side of the island from Lith Harbor. Phil drives you there for a small fare, much faster than walking through Henesys.</p>
-<p class="uncertainty"><span class="label">Unresolved:</span> Fare from a player report (about 50 to 100 mesos for a Beginner); the source does not list Phil&#x27;s destinations or prices. This guide budgets 100.</p>
-<p><span class="label">Sources:</span> <a href="https://meowdb.com/msclassic/npcs/101">Phil</a></p>
+<p><span class="label">Why:</span> Ellinia is on the far side of the island. Phil offers beginners a discounted ride to their job town, much faster than walking through Henesys.</p>
+<p class="uncertainty"><span class="label">Unresolved:</span> The ride&#x27;s price is not published. Players report about 50 to 100 mesos; this guide budgets 100.</p>
+<p><span class="label">Sources:</span> <a href="https://meowdb.com/msclassic/quest-tracker/10001">Phil&#x27;s Call</a> · <a href="https://meowdb.com/msclassic/npcs/101">Phil</a></p>
 </div></details></li>
 </ol></details>
 <details class="panel section" id="section-6"><summary><span>6. Ellinia: first job</span><span class="count">0 / 2</span></summary><ol class="steps">
@@ -205,13 +219,14 @@ ol.steps{list-style:none;margin:0;padding:0 8px 8px}
 </div></details></li>
 </ol></details>
 <section class="handoff"><h2>Next: Part 3 — First job to second job</h2><p>You are a level-10 Magician in Ellinia. Part 3 will cover levels 10 to 30 and the second job advancement. It is not written yet.</p><span class="next-link pending">Coming soon</span></section>
-<details class="panel info"><summary>Route decisions and skips (3)</summary><div class="body">
+<details class="panel info"><summary>Route decisions and skips (4)</summary><div class="body">
 <details class="more"><summary>Two trips into the fields instead of one</summary><div class="body"><p>The second Olaf and Teo quests unlock only after their first quests are handed in, and both turn-ins are in Lith Harbor. Skipping the first pair would also skip the second pair: 4 quests, 496 XP and 1,108 mesos. Without those mesos you could not pay for the ride to Ellinia, because the ship fare uses up the Maple Island quest mesos.</p></div></details>
-<details class="more"><summary>Finishing level 10 on Thicket Around the Beach II</summary><div class="body"><p>You are already on this map with Pigs and Orange Mushrooms for the quests, and finishing here means one trip to Ellinia with no return. Maps near Ellinia were not compared for a Beginner, so this choice is not yet timed.</p></div></details>
-<details class="more"><summary>Phil instead of walking</summary><div class="body"><p>Walking crosses many maps; the ride costs about 100 mesos out of the 1,108 the quests pay.</p></div></details>
+<details class="more"><summary>No set grinding spot</summary><div class="body"><p>Servers are crowded, so the best place to grind is wherever you can hold a spot alone and kill monsters in a couple of hits. That changes hour to hour, so the guide covers the quest path and marks each gap with a &quot;Go grind&quot; step instead of a map (player guidance).</p></div></details>
+<details class="more"><summary>Phil&#x27;s Call before first job</summary><div class="body"><p>Phil&#x27;s Call needs only level 10 as a Beginner and pays 188 XP and 245 mesos. Turning it in also unlocks Phil&#x27;s discounted ride to Ellinia, so it costs no extra trip.</p></div></details>
+<details class="more"><summary>Phil instead of walking</summary><div class="body"><p>Walking crosses many maps; the ride costs about 100 mesos out of the 1,353 the quests pay.</p></div></details>
 </div></details><details class="panel info"><summary>Limitations</summary><div class="body"><ul>
 <li>Only the maps this route visits on Victoria Island were collected. Other routes and towns are not compared.</li>
-<li>XP and mesos are tracked as guaranteed minimums: quest rewards plus required kills only. Part 1&#x27;s minimum (level 7, 1,131 XP, 0 mesos after the ship) is the starting point, so real play is ahead of these numbers. The level-10 grind is sized from that minimum and is likely shorter in practice.</li>
+<li>XP and mesos are tracked as guaranteed minimums: quest rewards plus required kills only. Part 1&#x27;s minimum (level 7, 1,131 XP, 0 mesos after the ship) is the starting point, so real play is ahead of these numbers. The &quot;Go grind&quot; step is sized from that minimum and is likely shorter in practice.</li>
 <li>The source pages do not name the turn-in NPC for the four Lith Harbor quests. Their completion dialogue is spoken by Olaf and Teo, so the guide hands them back to the giver.</li>
 <li>Kill credit shared between quests, Phil&#x27;s destination and fare, and first-job details come from player reports and source pages. Confirm in the game.</li>
 </ul></div></details>
